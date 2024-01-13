@@ -31,7 +31,7 @@ $(function () {
     $('.amenities h4').text(content);
   };
 
-  $.get('http://0.0.0.0:5001/api/v1/status/',
+  $.get('http://127.0.0.1:5001/api/v1/status/',
     function (data, textStatus, jqXHR) {
       if (data.status === 'OK') {
         $('div#api_status').addClass('available');
